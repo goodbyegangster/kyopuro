@@ -2,6 +2,7 @@
 
 ## アルゴリズム
 
+- [再帰関数（末尾再起・メモ化）](./algorithm/recursive_function.md)
 - [素数判定のアルゴリズム](./algorithm/prime.md)
 - [エストラテネスの篩](./algorithm/sieve_of_eratosthenes.md)
 - [ヒープソート ※途中](./algorithm/sort_heap.py)
