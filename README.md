@@ -25,12 +25,17 @@
 
 ## チップス
 
-- [組み合わせ・順列・直積集合を作成するライブラリ](./tips/combination_permutation_product.md)
-- [標準出力における flush の概念](./tips/flush.md)
-- [二次元座標（迷路とか）上で、頂点を移動させる方法](./tips/how_to_move_vertices_on_two-dimension.md)
-- [再帰関数の実行上限数を更新する](./tips/recursionlimit.md)
-- [Python の String 型はシーケンスである、ということ](./tips/string.md)
-- [集合の記号](./tips/symbols_of_set.md)
+### common
+
+- [集合の記号](./tips/common/symbols_of_set.md)
+
+### Python
+
+- [組み合わせ・順列・直積集合を作成するライブラリ](./tips/python/combination_permutation_product.md)
+- [標準出力における flush の概念](./tips/python/flush.md)
+- [二次元座標（迷路とか）上で、頂点を移動させる方法](./tips/python/how_to_move_vertices_on_two-dimension.md)
+- [再帰関数の実行上限数を更新する](./tips/python/recursionlimit.md)
+- [Python の String 型はシーケンスである、ということ](./tips/python/string.md)
 
 ## 解法を思いつくためのメモ
 

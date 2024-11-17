@@ -1,10 +1,10 @@
-## 「組み合わせ」と「順列」と「直積集合（デカルト積）」を作成するライブラリ
+# 「組み合わせ」と「順列」と「直積集合（デカルト積）」を作成するライブラリ
 
-### 組み合わせ
+## 組み合わせ
 
-`itertools.combinations()` を利用する。第1引数に「選択対象データのiterable」を、第2引数に「選択数」を入れる。
+`itertools.combinations()` を利用する。第 1 引数に「選択対象データの iterable」を、第 2 引数に「選択数」を入れる。
 
-例えば、[0, 1, 2, 3, 4] より、3つ選んだ組み合わせパターンを抽出する場合。つまり、5C3 の場合。
+例えば、[0, 1, 2, 3, 4] より、3 つ選んだ組み合わせパターンを抽出する場合。つまり、5C3 の場合。
 
 ```python
 from itertools import combinations
@@ -26,11 +26,11 @@ print(pattern)
 
 [itertools.combinations()](https://docs.python.org/3.9/library/itertools.html#itertools.combinations)
 
-### 順列
+## 順列
 
-`itertools.permutations()` を利用する。第1引数に「選択対象データのiterable」を、第2引数に「選択数」を入れる。
+`itertools.permutations()` を利用する。第 1 引数に「選択対象データの iterable」を、第 2 引数に「選択数」を入れる。
 
-例えば、[0, 1, 2, 3, 4] より、3つ選んだ順列のパターンを抽出する場合。つまり、5P3の場合。
+例えば、[0, 1, 2, 3, 4] より、3 つ選んだ順列のパターンを抽出する場合。つまり、5P3 の場合。
 
 ```python
 from itertools import permutations
@@ -53,7 +53,7 @@ print(pattern)
 
 [itertools.permutations](https://docs.python.org/3.9/library/itertools.html#itertools.permutations)
 
-### 直積集合（デカルト積）
+## 直積集合（デカルト積）
 
 `直積集合（デカルト積）` とは、複数の集合から要素を一つずつ取り出した組み合わせの集合、のこと。下記コードのトランプの例がわかりやすい。
 

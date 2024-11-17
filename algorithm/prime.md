@@ -2,7 +2,7 @@
 
 ## 考え方
 
-ある整数 `N` が素数であるか判定するには、ある整数 `N` の平方根以下までの整数で試し割り、あまりを見ればよい。
+ある整数 `N` が素数であるか判定するには、ある整数 `N` の平方根以下までの整数で試し割り、余りを見ればよい。
 
 ## コード
 
@@ -10,11 +10,11 @@
 def is_prime(N: int) -> bool:
     if N < 2:
         return False
-    i = 2
-    while i * i <= N:
-        if N % i == 0:
+    x = 2
+    while x * x <= N:
+        if N % x == 0:
             return False
-        i += 1
+        x += 1
     return True
 
 
