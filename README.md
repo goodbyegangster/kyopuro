@@ -37,6 +37,10 @@
 - [再帰関数の実行上限数を更新する](./tips/python/recursionlimit.md)
 - [Python の String 型はシーケンスである、ということ](./tips/python/string.md)
 
+### Go
+
+- [基本](./tips/go/basic.md)
+
 ## 解法を思いつくためのメモ
 
 - [解法を思いつくためのメモ](.//memo.md)
