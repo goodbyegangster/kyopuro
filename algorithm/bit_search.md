@@ -8,23 +8,21 @@
   - 「使う／使わない」を全探索する
   - 「選ぶ／選ばない」を全探索する
 
-[参考：こわくない bit 全探索 1 入門編: bit 全探索ってなに？【競プロ解説】](https://qiita.com/u2dayo/items/68e35815659b1041c3c2)
+[こわくない bit 全探索 1 入門編: bit 全探索ってなに？【競プロ解説】 | Qiita](https://qiita.com/u2dayo/items/68e35815659b1041c3c2)
 
-[参考動画：【ゆっくり解説】bit 全探索 ABC182 C【競技プログラミング】](https://www.youtube.com/watch?v=umfbbrElhaM)
+[【ゆっくり解説】bit 全探索 ABC182 C【競技プログラミング】 | Youtube](https://www.youtube.com/watch?v=umfbbrElhaM)
 
 ## 典型問題（部分和問題）
 
-> 長さが `N` の数列（A とする） `{1, 2, ..., N}` があり、数列より複数の値を選択、その合計（W とする）が `10` となるパターンは何種類あるか
+長さが `N` の数列（A とする） `{1, 2, ..., N}` がある。
 
-> たとえば、`{1, 2, 3, 4}` が合致するパターンになる
+その数列より複数の値を選択し、その合計（W とする）が `10` となるパターンは何種類あるか。
 
 ## 計算量
 
 ### 時間計算量
 
-上の典型問題を例とすると下記になる。
-
-> O(2^N)
+O(2^N)
 
 ## 実装方法
 
@@ -32,7 +30,7 @@
 
 ### 直積集合を利用して実装
 
-`itertools.product()` を利用する。
+[itertools.product](https://docs.python.org/ja/3/library/itertools.html#itertools.product) を利用する。
 
 ```python
 from itertools import product
@@ -66,7 +64,7 @@ print(count)
 #  (False, True, True, False, True)
 ```
 
-[参考：こわくない bit 全探索 2 基本編 1: 簡単な例題で bit 全探索をやってみよう！【競プロ解説】](https://qiita.com/u2dayo/items/8c1601a61841540b4947)
+[こわくない bit 全探索 2 基本編 1: 簡単な例題で bit 全探索をやってみよう！【競プロ解説】 | Qiita](https://qiita.com/u2dayo/items/8c1601a61841540b4947)
 
 ### ビット演算を利用して実装
 
@@ -115,4 +113,4 @@ print(count)
 #  0b11001
 ```
 
-[参考：こわくない bit 全探索 3 基本編 2: 2 進法を使って実装してみよう！【競プロ解説】](https://qiita.com/u2dayo/items/e321c66aa43e3a9b1b31)
+[こわくない bit 全探索 3 基本編 2: 2 進法を使って実装してみよう！【競プロ解説】 | Qiita](https://qiita.com/u2dayo/items/e321c66aa43e3a9b1b31)
