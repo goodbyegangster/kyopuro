@@ -23,13 +23,21 @@
 - [グラフ](./data_structure/graph.md)
 - [木](./data_structure/tree.md)
 
-## チップス
+## tips
 
 ### common
 
+<details>
+<summary>Python</summary>
+
 - [集合の記号](./tips/common/symbols_of_set.md)
 
+</details>
+
 ### Python
+
+<details>
+<summary>Python</summary>
 
 - [組み合わせ・順列・直積集合を作成するライブラリ](./tips/python/combination_permutation_product.md)
 - [標準出力における flush の概念](./tips/python/flush.md)
@@ -37,9 +45,17 @@
 - [再帰関数の実行上限数を更新する](./tips/python/recursionlimit.md)
 - [Python の String 型はシーケンスである、ということ](./tips/python/string.md)
 
+</details>
+
 ### Go
 
+<details>
+<summary>Go</summary>
+
 - [基本](./tips/go/basic.md)
+- [データ構造](./tips/go/data_structure.md)
+
+</details>
 
 ## 解法を思いつくためのメモ
 
