@@ -59,4 +59,9 @@
 
 ## 解法を思いつくためのメモ
 
-- [解法を思いつくためのメモ](.//memo.md)
+<details>
+<summary>memo</summary>
+
+- [解法を思いつくためのメモ](./solution/memo.md)
+
+</details>

@@ -1,11 +1,7 @@
-# 再帰関数 (recursive function)
+# 再帰関数 (recursive function)　<!-- omit in toc -->
 
-- [再帰関数 (recursive function)](#再帰関数-recursive-function)
-  - [漸化式と再帰関数](#漸化式と再帰関数)
-    - [参考](#参考)
-  - [コード](#コード)
-    - [(1) 末尾再帰](#1-末尾再帰)
-    - [(2) メモ化](#2-メモ化)
+- [漸化式と再帰関数](#漸化式と再帰関数)
+- [コード](#コード)
 
 ## 漸化式と再帰関数
 
@@ -63,7 +59,7 @@ print(func(p, r, n))
 # 10510.100501
 ```
 
-[漸化式と再帰 ― 数学 ×Python プログラミング入門](https://www.youtube.com/watch?v=D2jHia1wiHw)
+[漸化式と再帰 | 数学 ×Python プログラミング入門](https://www.youtube.com/watch?v=D2jHia1wiHw)
 
 ## コード
 
@@ -75,7 +71,7 @@ print(func(p, r, n))
 ・F(n+2) = F(n) + F(n+1)
 ```
 
-[フィボナッチ数](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%9C%E3%83%8A%E3%83%83%E3%83%81%E6%95%B0)
+[フィボナッチ数 | Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%9C%E3%83%8A%E3%83%83%E3%83%81%E6%95%B0)
 
 ### (1) 末尾再帰
 
@@ -101,7 +97,7 @@ print(fibonacci(x))
 
 > メモ化は、一度計算した再帰関数の結果を配列などに保存しておき、再度同じ関数の計算が必要になった際はそこから参照するテクニックです。これにより、同じ関数の計算結果を何度も再帰呼び出しを用いて計算してしまうことを避けることができます。
 
-[アルゴ式 - Q4-4. フィボナッチ数列 (再帰-2)](https://algo-method.com/tasks/423/editorial)
+[Q4-4. フィボナッチ数列 (再帰-2) | アルゴ式](https://algo-method.com/tasks/423/editorial)
 
 ```python
 import sys
@@ -123,3 +119,8 @@ memo = [-1 for _ in range(x+1)]  # 計算結果を格納する配列を用意し
 print(fibonacci(x))
 # 55
 ```
+
+なお、Python では functools 内に利用できるデコレーターが用意されている。
+
+- [functools.cache](https://docs.python.org/ja/3/library/functools.html#functools.cache)
+- [functools.lru_cache](https://docs.python.org/ja/3/library/functools.html#functools.lru_cache)
