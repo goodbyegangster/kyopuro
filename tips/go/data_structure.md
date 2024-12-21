@@ -2,7 +2,7 @@
 
 - [slice in slice](#slice-in-slice)
 - [map in slice](#map-in-slice)
-- [slice im map](#slice-im-map)
+- [slice in map](#slice-in-map)
 
 ## slice in slice
 
@@ -85,7 +85,7 @@
 	// [map[0:0 1:1 2:2] map[0:0 1:1 2:2] map[0:0 1:1 2:2]]
 ```
 
-## slice im map
+## slice in map
 
 ```go
 	N := 3
