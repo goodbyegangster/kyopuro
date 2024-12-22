@@ -1,12 +1,8 @@
-# 動的計画法 (Dynamic Programming)
+# 動的計画法 (Dynamic Programming) <!-- omit in toc -->
 
-- [動的計画法 (Dynamic Programming)](#動的計画法-dynamic-programming)
-  - [動的計画法とは](#動的計画法とは)
-  - [処理イメージ](#処理イメージ)
-    - [表を作る](#表を作る)
-    - [セルに値を埋める](#セルに値を埋める)
-    - [漸化式、遷移式](#漸化式遷移式)
-  - [参考](#参考)
+- [動的計画法とは](#動的計画法とは)
+- [処理イメージ](#処理イメージ)
+- [参考](#参考)
 
 ## 動的計画法とは
 
@@ -52,5 +48,5 @@ print(*dp, sep='\n')
 ## 参考
 
 - 動画
-  - [【ゆっくり解説】DP(動的計画法)解説 EDPC D 【競技プログラミング】](https://www.youtube.com/watch?v=gVJ16ThsJYs)
-  - [動的計画法(DP)をみんながわかるように超ていねいにじっくり説明した【Python プログラミング入門/ゆっくり解説】](https://www.youtube.com/watch?v=Y0UEyW64CzM)
+  - [【ゆっくり解説】DP(動的計画法)解説 EDPC D 【競技プログラミング】 | Youtube](https://www.youtube.com/watch?v=gVJ16ThsJYs)
+  - [動的計画法(DP)をみんながわかるように超ていねいにじっくり説明した【Python プログラミング入門/ゆっくり解説】 | Youtube](https://www.youtube.com/watch?v=Y0UEyW64CzM)

@@ -1,6 +1,6 @@
-# エストラテネスの篩 (Sieve of Eratosthenes)
+# エラトステネスの篩 (Sieve of Eratosthenes)
 
-ある整数 `N` 以下の、素数をすべて列挙するアルゴリズム。
+ある整数 `N` 以下の素数をすべて列挙するアルゴリズム。
 
 ## 考え方
 
@@ -15,8 +15,7 @@
 ```python
 from math import sqrt, ceil
 
-
-def eratosthenes(N: int) -> list:
+def eratosthenes(N: int) -> list[bool]:
     # 素数判定の結果を格納するリスト。デフォルト値は True
     list_prime = [True for _ in range(N+1)]
     # 「0」と「1」は素数でないので False にする
@@ -24,29 +23,26 @@ def eratosthenes(N: int) -> list:
 
     # ふるいにかける
     # 判定に利用する数は N の平方根の値までで良い
-    max = ceil(sqrt(N))
-    for p in range(2, max):
+    max_val = ceil(sqrt(N))
+    for p in range(2, max_val + 1):
         # 既に非素数と判定されている場合にスキップ
         if not list_prime[p]:
             continue
         # 判定する整数の倍数は素数ではないので False を埋めていく
-        q = p + p
-        while q <= N:
+        for q in range(p * p, N + 1, p):
             list_prime[q] = False
-            q += p
 
     return list_prime
 
-
 print(eratosthenes(50))
-# [False, False, True, True, False, True, False, True, False, False, False, True, False, True, False, False, False, True, False, True, False, False, False, True, False, False, False, False, False, True, False, True, False, False, False, False, False, True, False, False, False, True, False, True, False, False, False, True, False, False, False]
+# [False, False, True, True, False, True, False, True, False, False, False, True, False, True, False, False, False, True, False, True, False, False, False, True, False, False, False, False, False, True, False, True, False, False, False, True, False, False, False, True, False, True, False, False, False, True, False, True]
 print([idx for idx, value in enumerate(eratosthenes(50)) if value])
 # [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 ```
 
 ## 参考
 
-- [アルゴ式 - エラトステネスの篩 (ふるい) を徹底解説](https://algo-method.com/descriptions/64)
-- [Wikipedia - エラトステネスの篩](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9)
-- [やりかた理解するの大事、エラトステネスの篩！！！【Python プログラミング入門/ゆっくり解説】](https://www.youtube.com/watch?v=1_wX5-H3Tyo)
-- [エラトステネスのふるいとその計算量](https://manabitimes.jp/math/992)
+- [エラトステネスの篩 (ふるい) を徹底解説 | アルゴ式](https://algo-method.com/descriptions/64)
+- [エラトステネスの篩 | Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%A9%E3%83%88%E3%82%B9%E3%83%86%E3%83%8D%E3%82%B9%E3%81%AE%E7%AF%A9)
+- [やりかた理解するの大事、エラトステネスの篩！！！【Python プログラミング入門/ゆっくり解説】 | Youtube](https://www.youtube.com/watch?v=1_wX5-H3Tyo)
+- [エラトステネスのふるいとその計算量 | Youtube](https://manabitimes.jp/math/992)

@@ -1,22 +1,18 @@
-# 幅優先探索 (Breadth-First Search)
+# 幅優先探索 (Breadth-First Search) <!-- omit in toc -->
 
-- [幅優先探索 (Breadth-First Search)](#幅優先探索-breadth-first-search)
-  - [幅優先探索とは](#幅優先探索とは)
-  - [扱うデータ構造](#扱うデータ構造)
-  - [処理イメージ](#処理イメージ)
-  - [計算量](#計算量)
-    - [時間計算量](#時間計算量)
-    - [空間計算量](#空間計算量)
-  - [深さ優先探索と幅優先探索の比較](#深さ優先探索と幅優先探索の比較)
-  - [コード](#コード)
-    - [各頂点の最短ステップを取得するプログラム](#各頂点の最短ステップを取得するプログラム)
-  - [参考資料](#参考資料)
+- [幅優先探索とは](#幅優先探索とは)
+- [扱うデータ構造](#扱うデータ構造)
+- [処理イメージ](#処理イメージ)
+- [計算量](#計算量)
+- [深さ優先探索と幅優先探索の比較](#深さ優先探索と幅優先探索の比較)
+- [コード](#コード)
+- [参考資料](#参考資料)
 
 ## 幅優先探索とは
 
 > アルゴリズムは根ノードで始まり隣接した全てのノードを探索する。それからこれらの最も近いノードのそれぞれに対して同様のことを繰り返して探索対象ノードをみつける。
 
-[Wikipedia - 幅優先探索](https://ja.wikipedia.org/wiki/%E5%B9%85%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2)
+[幅優先探索 | Wikipedia](https://ja.wikipedia.org/wiki/%E5%B9%85%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2)
 
 ## 扱うデータ構造
 
@@ -26,7 +22,12 @@
 **イメージ**
 
 ```python
-graph = [[1, 2, 6], [5, 7], [7], [3, 6]]
+graph = [
+  [1, 2, 6],
+  [5, 7],
+  [7],
+  [3, 6]
+]
 ```
 
 ## 処理イメージ
@@ -97,7 +98,7 @@ print(distinct_list)
 
 ## 参考資料
 
-- [アルゴ式 幅優先探索 (BFS) を徹底解説](https://algo-method.com/descriptions/114#h2-24)
-- [Qiita BFS (幅優先探索) 超入門！ 〜 キューを鮮やかに使いこなす 〜](https://qiita.com/drken/items/996d80bcae64649a6580#1-5-dfs-%E3%81%A8-bfs-%E3%81%A8%E3%81%AE%E6%AF%94%E8%BC%83)
-- [【ゆっくり解説】BFS(幅優先探索)解説 ABC138 D【競技プログラミング】](https://www.youtube.com/watch?v=WyJvs9hL9Yc&t=65s)
-- [【ゆっくり実況】幅優先探索(BFS)めっちゃていねいに説明、AtCoder209D【Python プログラミング入門/ゆっくり解説】](https://www.youtube.com/watch?v=4sKzFGWoNYQ)
+- [幅優先探索 (BFS) を徹底解説 | アルゴ式](https://algo-method.com/descriptions/114#h2-24)
+- [BFS (幅優先探索) 超入門！ 〜 キューを鮮やかに使いこなす 〜 | Qiita](https://qiita.com/drken/items/996d80bcae64649a6580#1-5-dfs-%E3%81%A8-bfs-%E3%81%A8%E3%81%AE%E6%AF%94%E8%BC%83)
+- [【ゆっくり解説】BFS(幅優先探索)解説 ABC138 D【競技プログラミング】 | Youtube](https://www.youtube.com/watch?v=WyJvs9hL9Yc&t=65s)
+- [【ゆっくり実況】幅優先探索(BFS)めっちゃていねいに説明、AtCoder209D【Python プログラミング入門/ゆっくり解説】 | Youtube](https://www.youtube.com/watch?v=4sKzFGWoNYQ)

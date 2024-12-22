@@ -59,7 +59,7 @@ print(func(p, r, n))
 # 10510.100501
 ```
 
-[漸化式と再帰 | 数学 ×Python プログラミング入門](https://www.youtube.com/watch?v=D2jHia1wiHw)
+[数学 ×Python プログラミング入門 漸化式と再帰 | Youtube](https://www.youtube.com/watch?v=D2jHia1wiHw)
 
 ## コード
 
