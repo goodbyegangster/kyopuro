@@ -53,7 +53,9 @@
 <summary>Go</summary>
 
 - [基本](./tips/go/basic.md)
+- [「標準入力」を「文字列入力」に入れ替える方法](./tips/go/mock_stdin.md)
 - [データ構造](./tips/go/data_structure.md)
+- [go で set 型を利用する](./tips/go/set.md)
 
 </details>
 
