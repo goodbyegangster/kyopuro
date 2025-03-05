@@ -1,4 +1,4 @@
-# データ構造 <!-- omit in toc -->
+# slice と map の使い方 <!-- omit in toc -->
 
 - [slice in slice](#slice-in-slice)
 - [map in slice](#map-in-slice)
