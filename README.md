@@ -2,6 +2,7 @@
 
 ## データ構造
 
+- [deque](./data_structure/deque.md)
 - [グラフ](./data_structure/graph.md)
 - [木](./data_structure/tree.md)
 
@@ -58,7 +59,7 @@
 
 - [基本](./tips/go/basic.md)
 - [「標準入力」を「文字列入力」に入れ替える方法](./tips/go/mock_stdin.md)
-- [slice と map の使い方](./tips/go/data_structure.md)
+- [slice と map の使い方](./tips/go/slice_and_map.md)
 - [go で set 型を利用する](./tips/go/set.md)
 
 </details>
